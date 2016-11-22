@@ -11,6 +11,11 @@ public class tuna extends cat {
 		System.out.println(age2);
 //		System.out.println(tunaFriend.age3);
 //		System.out.println(tunaFriend.age4);
-		catAgePrint(); //cat이라는 이름의 superclass의 catAgePrint라는 메소드를 호출 할 수 있다.
+
+//		접근제한자 메소드 호출 확인		
+		catAgePrint1(); //cat이라는 이름의 superclass의 catAgePrint라는 메소드를 호출 할 수 있다.
+		catAgePrint2();
+//		catAgePrint3();
+//		catAgePrint4();
 	}
 }

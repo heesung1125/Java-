@@ -7,10 +7,77 @@ Class Diagram
 Sequence Diagram
 GitHub → 코드자랑
 
- * 상속
+JAVA API
+ : 미리 만들어논 클래스를 그냥 쓰기만 하는것 (String, Integer, System, ..., 등)
 
+ * 상속(Inheritance)
+-------------------------------------------------------------------------
 
+SuperClass.java
 
+package SuperClass패키지명;
 
+public class 클래스명1 {
+protected 자료형 변수명1; // 변수 상속준비(?)
+자료형 변수명2; // default 접근제한자
 
+	protected 반환자료형 메소드명([인자1],[인자2]...[인자n){ //메소드 상속준비(?)
+	... 코드내용 ...	
+	}
+-------------------------------------------------------------------------
+SubClass.java
 
+package SubClass패키지명;
+
+import 상속받을 패키지명 및 클래스명;
+
+public class 클래스명2 extends 상속받을 클래스명(클래스명1)
+
+	public 반환자료형 메소드명([인자1],[인자2]...[인자n){ //상속 받은 메소드 사용할 메소드(?)
+	변수명1; // protected 선언을 해서 출력 가능
+	변수명2; // default 선언한 변수는 해당 패키지 내에서만 사용 가능
+	
+	
+	}
+
+}
+-------------------------------------------------------------------------
+
+ * @ (Annotation)
+-상속거부 + 재정의
+ @Override //상속을 거부하고 내가 만들어 쓸꺼야
+ 
+☆★☆★☆★!!! 하나의 클래스만 상속 가능!!!☆★☆★☆★
+ -------------------------------------------------------------------------
+ * 추상화 클래스(Abstract Class) 
+
+ public class JoinUs19Up{
+ 	String id, name, pass;
+ 	int age;
+ 	public boolean checkId(int age){
+ 		if(age < 19){
+ 			return false;
+ 		}
+ 	} 
+ }
+ 
+ public class JoinUs14Down{
+
+ } 
+ 
+//추상 클래스 생성
+ public abstract class JoinUs {
+ 	public abstract boolean checkId(int age);
+ 	public abstract boolean checkName(String name);
+ 	
+
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
