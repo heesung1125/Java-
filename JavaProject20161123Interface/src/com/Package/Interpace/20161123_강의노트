@@ -1,0 +1,22 @@
+2016-11-23_강의노트
+
+Interface(인터페이스)
+implements 인터페이스명
+ : 남이 만든 인터페이스를 가져다 쓰기.
+  ex)
+ public class implement_interface1 implements Interface_test
+ 
+ 
+ --------------------------------------------------------------------
+ Abstract ≒ Interface
+ 
+ Abstract(추상화 클래스)는...
+ 	: 추상화 메소드와 일반 메소드를 같이 적어놓고 불러올 클래스에서
+ 	추상화 클래스는 반드시 호출해야되고, 일반클래스는 선택적인 반면...
+ 	
+Interface(인터페이스)는...
+	:일반 메소드를 작성 할 수 없고 오로지 추상화 메소드만 적어놓을 수 있다.
+	
+Overloading
+
+

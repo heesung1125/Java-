@@ -6,6 +6,8 @@ ER-Diagram
 Class Diagram
 Sequence Diagram
 GitHub → 코드자랑
+반응형 웹 ★ 스크린 사이즈에 따른 출력 화면의 크기 조정을.... 비율로 할꺼냐??? pixel로 할꺼냐???/
+
 
 JAVA API
  : 미리 만들어논 클래스를 그냥 쓰기만 하는것 (String, Integer, System, ..., 등)
