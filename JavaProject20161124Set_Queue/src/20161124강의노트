@@ -69,21 +69,42 @@ class1
 자바 네트워킹
  TCP / IP  Protocol Suite
  
- IP (Internet Protocol)
+ IP (Internet Protocol) (집주소)
 	- IP address : 	사설 IP 주소 → 내맘대로 사용 가능 (192.168.x.x) (192.16.x.x ~ 172.31.x.x) (10.x.x.x)
 					공인 IP 주소 → IP주소 관리기구(ICANN)에서 할당 받은 IP 주소
+ 	- IP주소를 알면 전세계 어디든 해당 PC를 찾아 가고, 찾아 올 수 있다.
 
- TCP : 
-
- UDP :
+ TCP / UDP (받는사람)
+ 	- Port번호 : IP주소로 찾아온 패킷이 해당 pc내에서 어느 프로그램으로 가야되는지 정하는 번호
+ 				이번호는 PC안에서만 겹치지 않으면 상관 없다.
+	
+	TCP
+		- 연결지향형 프로토콜  → 2. 정확히 받는다.
+		- 스트림(stream) 기반 통신 (1바이트씩 연속적으로 보낸다.) → 1. 대량의 데이터를
+	UDP
+		- 비연결지향형 프로토콜
+		- Datagram 기반통신
+		 
  
  ICMP : cmd에서... ping www.google.com
  DNS 질의
   └ 반드시 IP주소를 알아야만 통신 가능.
 
+@ NAT(Network Address Translation) ≒ 인터넷 공유기
+ : 사설IP주소를 공유기에서 공인IP로 변경하여 인터넷으로 전송하고, 반환할때 변경한 공인IP를 다시 요청한 사설IP로 변경해준다.
+
+									//
 
 
 
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
