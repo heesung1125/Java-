@@ -13,16 +13,17 @@ import java.util.Scanner;
 			System.out.println("클라이언트 입니다.");
 			// TODO Auto-generated method stub
 			Scanner sc = new Scanner(System.in);
-			Scanner sc1 = new Scanner(System.in);
-			Scanner sc2 = new Scanner(System.in);
+//			Scanner sc1 = new Scanner(System.in);
+//			Scanner sc2 = new Scanner(System.in);
 			try{
-				System.out.println("접속할 IP 주소 : ");
-				String IP = sc1.nextLine();
-				System.out.println("접속할 포트 주소 : ");
-				int port1 = sc2.nextInt();
+//				System.out.println("접속할 IP 주소 : ");
+//				String IP = sc1.nextLine();
+//				System.out.println("접속할 포트 주소 : ");
+//				int port1 = sc2.nextInt();
 				Socket connSock = new Socket(); // 서버에 접속할 때 사용할 소켓 생성
-				InetSocketAddress connAddr = new InetSocketAddress(IP, port1);
-				connSock.connect(connAddr); // 위에서 결정한 주소로 연결 
+				InetSocketAddress connAddr = new InetSocketAddress("127.0.0.1", 1818); //(IP, port1)
+				connSock.connect(connAddr); // 위에서 결정한 주소로 연결
+				
 
 				
 				OutputStream sender = connSock.getOutputStream(); //소켓으로 데이터를 보내려면 꼭 필요함.
